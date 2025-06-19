@@ -28,7 +28,14 @@ function Hero() {
                         <Chip key={index} label={item} />
                     ))}
                 </div>
-                <CTAbutton />
+                <CTAbutton
+                    variant="primary"
+                    size="lg"
+                    whileHover={{ scale: 1.1, rotate: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    Lorem Ipsum
+                </CTAbutton>
             </div>
             <div className="w-full pl-2.5 pr-4 justify-center">
                 <img src={draw} alt="Hero Illustration" className="w-full h-auto" />
